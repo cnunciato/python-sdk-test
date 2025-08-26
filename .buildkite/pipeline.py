@@ -6,7 +6,7 @@ pipeline.add_step({
         'queue': 'hosted-linux'
     },
     'commands': [
-        'brew install uv',
+        'curl -LsSf https://astral.sh/uv/install.sh | sh',
         'uv run main.py'
     ],
     'image': 'ubuntu:24.04'
