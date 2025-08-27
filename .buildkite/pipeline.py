@@ -3,7 +3,7 @@ from buildkite_sdk import Pipeline
 pipeline = Pipeline()
 pipeline.add_step({
     'commands': [
-        'lsb_release -ds'
+        'cat /etc/os-release'
     ],
     'image': 'ubuntu:24.04'
 })
