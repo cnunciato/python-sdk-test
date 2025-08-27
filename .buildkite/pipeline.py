@@ -6,7 +6,7 @@ pipeline.add_step({
         'curl -LsSf https://astral.sh/uv/install.sh | sh',
         'source $$HOME/.local/bin/env',
         'uv python install',
-        'uv run main.py'
+        # 'uv run main.py'
     ],
     'image': 'ubuntu:24.04'
 })
