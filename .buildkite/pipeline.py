@@ -3,10 +3,7 @@ from buildkite_sdk import Pipeline
 pipeline = Pipeline()
 pipeline.add_step({
     'commands': [
-        'curl -LsSf https://astral.sh/uv/install.sh | sh',
-        'source $$HOME/.local/bin/env',
-        # 'uv python install',
-        # 'uv run main.py'
+        'echo "Hi, world!'
     ],
     'image': 'ubuntu:24.04'
 })
